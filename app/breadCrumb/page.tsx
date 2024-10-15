@@ -13,8 +13,8 @@ const breadCrumb = (props: any) => {
       height: "100%",
       width: "100%",
       backgroundSize: "cover",
-      paddingTop: "200px",
-      paddingBottom:"200px"
+      paddingTop: "150px",
+      paddingBottom:"100px"
     }}
     // className=' mt-[74px] bg-black px-4 py-4 md:mt-0 '
     >

@@ -101,7 +101,7 @@ const Footer = () => {
                     alt="phone symbol"
                     className="image"
                   /> */}
-                  <div className=" text-[#13ddfa]">
+                  <div className=" text-[#13ddfa] hover:text-yellow-200">
                     {/* +61 */}
                      9876262108
                     <br />
@@ -112,7 +112,7 @@ const Footer = () => {
                   className="email-block w-inline-block"
                 >
                   {/* <Image src={email} loading="lazy" alt="Email symbol" /> */}
-                  <div className="email-text text-[#13ddfa]">singhharpreet7931@gmail.com</div>
+                  <div className="email-text text-[#13ddfa] hover:text-yellow-200">singhharpreet7931@gmail.com</div>
                 </Link>
                 <div className="address-block">
                   {/* <Image src={location} loading="lazy" alt="location symbol" /> */}
@@ -146,14 +146,14 @@ const Footer = () => {
                   target="_blank"
                   className="social-icon w-inline-block "
                 >
-                  <CgFacebook className="text-[#aeaeae] text-4xl hover:text-red-500" />
+                  <CgFacebook className="text-[#aeaeae] text-4xl hover:text-yellow-200" />
                 </Link>
                 <Link
                   href=""
                   target="_blank"
                   className="social-icon l w-inline-block"
                 >
-                  <BsInstagram className="text-[#aeaeae] text-3xl mt-1  hover:text-red-500" />
+                  <BsInstagram className="text-[#aeaeae] text-3xl mt-1  hover:text-yellow-200" />
                 </Link>
               </div>
             </div>

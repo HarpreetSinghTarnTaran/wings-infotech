@@ -5,6 +5,7 @@ import HomeService from "@/app/homeService/page";
 import BackImg from "@/app/assets/images/home.jpg";
 import LaunchBull from "@/app/assets/images/LaunchBull.jpeg";
 import Jangbaj from "@/app/assets/images/Jangbaj.jpeg";
+import HiyNSky from "@/app/assets/images/HiyNSky.png"
 import Jangbaj2 from "@/app/assets/images/Jangbaj2.jpeg";
 import Jangbaj3 from "@/app/assets/images/Jangbaj3.jpeg";
 import { motion, AnimatePresence } from "framer-motion";
@@ -111,7 +112,7 @@ const home = () => {
         <h3 className="md:text-4xl md:font-bold">
           Check out some of our recent work.
         </h3>
-        {/* <div className="grid  grid-cols-1 py-10 gap-4">
+        {/* {/* <div className="grid  grid-cols-1 py-10 gap-4">
           {recentWork.map((item) => (
             <>
               {" "}
@@ -132,45 +133,22 @@ const home = () => {
               </div>
             </>
           ))}
-        </div> */}{" "}
+        </div> */}
         <div className=" md:py-10 px-2 ">
-          <div className="md:flex justify-center md:gap-x-10 pt-8 ">
-          <Swiper
+          <div className="md:flex justify-center md:gap-x-2 pt-8 ">
+          {/* <Swiper
           className="  md:h-[350px] md:w-[450px] h-[300px] w-[320px]    rounded-3xl"
-        // modules={[Autoplay, Navigation]}
+  
         modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
         autoplay={{ delay: 4000 }}
         loop
-        // spaceBetween={50}
-    
-        // navigation
+     
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
-        // breakpoints={{
-        //   0: {
-        //     slidesPerView: 1,
-        //     spaceBetween: 20,
-        //   },
-        //   480: {
-        //     slidesPerView: 2,
-        //     spaceBetween: 20,
-        //   },
-        //   768: {
-        //     slidesPerView: 3,
-        //     spaceBetween: 20,
-        //   },
-        //   1024: {
-        //     slidesPerView: 3,
-        //     spaceBetween: 20,
-        //   },
-        //   1280: {
-        //     slidesPerView: 3,
-        //     spaceBetween: 20,
-        //   },
-        // }}
+     
       >
         <SwiperSlide>
       
@@ -222,30 +200,46 @@ const home = () => {
               ></div></a>
             </div>
         </SwiperSlide>
-      </Swiper>
+      </Swiper> */}
+      <div className="my-4  bg-slate-500 hover:border-l hover:border-t hover:border-4 border-yellow-400 md:h-[350px] md:w-[600px] h-[300px] w-[310px] rounded-3xl">
+              <a href="https://www.jangbajsingh.com/"><div 
+                className="rounded-3xl"
+                style={{
+                  backgroundImage: `url(${Jangbaj.src})`,
+                  backgroundPosition: "center",
+                  height: "100%",
+                  width: "100%",
+                  backgroundSize: "cover",
+                  // backgroundSize: "cover",
+                  // paddingBottom:"200px"
+                }}
+              ></div></a>
+            </div>
             <div className="md:h-[350px] md:w-[450px] w-fit md:pt-10">
-              <p className="text-xl font-semibold translate text-slate-400">
+              <p className="text-xl font-semibold translate text-slate-500">
                 Jangbaj Singh
               </p>
+              <span className="text-xl font-extralight text-slate-600">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea enim
               quidem quos temporibus hic, recusandae deserunt eaque. Maiores
               laboriosam blanditiis atque architecto eius molestias molestiae
-              cupiditate, suscipit in quaerat officia?
+              cupiditate, suscipit in quaerat officia?</span>
             </div>
           </div>
           <div className="border-2 mt-10 mx-6 md:hidden"></div>
-          <div className="md:flex justify-center md:gap-x-10 md:pt-8">
-            <div className="md:h-[350px] md:w-[450px] pt-10">
-              <p className="text-xl font-semibold translate text-slate-400">
+          <div className="md:flex justify-center md:gap-x-2 md:pt-8">
+            <div className="md:h-[350px] md:w-[400px] pt-10">
+              <p className="text-xl font-semibold translate text-slate-500">
                 LaunchBull
               </p>
+              <span className="text-xl font-extralight text-slate-600">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea enim
               quidem quos temporibus hic, recusandae deserunt eaque. Maiores
               laboriosam blanditiis atque architecto eius molestias molestiae
-              cupiditate, suscipit in quaerat officia?
+              cupiditate, suscipit in quaerat officia?</span>
             </div>
           <div
-             className="my-4 bg-yellow-400 hover:border-l hover:border-t hover:border-4 border-yellow-400 md:h-[350px] md:w-[450px] h-[300px] w-[300px] rounded-3xl">
+             className="my-4 bg-yellow-400 hover:border-l hover:border-t hover:border-4 border-yellow-400 md:h-[350px] md:w-[670px] h-[300px] w-[310px] rounded-3xl">
               <a href="https://launchbulls.com/"> <div
                 className="rounded-3xl"
                 style={{
@@ -261,11 +255,11 @@ const home = () => {
             </div>
           </div>
           <div className="md:flex justify-center md:gap-x-10 pt-8 ">
-            <div className="my-4  bg-slate-500 hover:border-l hover:border-t hover:border-4 border-yellow-400 md:h-[350px] md:w-[450px] h-[300px] w-[320px]    rounded-3xl">
+            <div className="my-4  bg-slate-500 hover:border-l hover:border-t hover:border-4 border-yellow-400 md:h-[350px] md:w-[600px] h-[300px] w-[310px]    rounded-3xl">
               <div
                 className="rounded-3xl"
                 style={{
-                  backgroundImage: `url(${Jangbaj.src})`,
+                  backgroundImage: `url(${HiyNSky.src})`,
                   backgroundPosition: "center",
                   height: "100%",
                   width: "100%",
@@ -276,13 +270,14 @@ const home = () => {
               ></div>
             </div>
             <div className="md:h-[350px] md:w-[450px] w-fit md:pt-10">
-              <p className="text-xl font-semibold translate text-slate-400">
+              <p className="text-xl font-semibold translate text-slate-500">
                 HighnSky
-              </p>
+              </p >
+              <span className="text-xl font-extralight text-slate-600">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea enim
               quidem quos temporibus hic, recusandae deserunt eaque. Maiores
               laboriosam blanditiis atque architecto eius molestias molestiae
-              cupiditate, suscipit in quaerat officia?
+              cupiditate, suscipit in quaerat officia?</span>
             </div>
           </div>
           <div className="border-2 mt-10 mx-6 md:hidden"></div>

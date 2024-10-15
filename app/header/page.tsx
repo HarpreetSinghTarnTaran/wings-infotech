@@ -15,12 +15,11 @@ const Header = () => {
   const [mobileView, setMobileView] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-
-  console.log("color", color);
-
+  
   useEffect(() => {
     localStorage.setItem("count", JSON.stringify(color));
   }, [color]);
+  
   return (
     <main className=" border-b relative ">
       <div className="w-full fixed">
@@ -30,7 +29,7 @@ const Header = () => {
               {" "}
               <a href="/" className="">
                 {/* <span className="pl-10">logo</span> */}
-                <p className="md:text-4xl  text-2xl font-semiboldbold hover:text-yellow-400">
+                <p className="md:text-4xl  text-xl font-semiboldbold hover:text-yellow-400">
                   Wings{" "}
                   <span className="text-yellow-400 hover:text-yellow-100">
                     InfoTech
@@ -51,7 +50,7 @@ const Header = () => {
                     });
                   }}
                   className={`${
-                    color?.home ? "text-red-500 " : "text-[#1d7297] "
+                    color?.home ? "text-[#1d7297a4] " : "text-[#1d7297] "
                   }  hover:text-yellow-200 cursor-pointer hover:border-b `}
                   //  className={(color === true ?"text-red-500":"")}
                   // className={` text-xl ${
@@ -70,7 +69,7 @@ const Header = () => {
                     });
                   }}
                   className={`${
-                    color?.about ? "text-red-500 " : "text-[#1d7297] "
+                    color?.about ? "text-[#1d7297a4] " : "text-[#1d7297] "
                   } hover:text-yellow-200 cursor-pointer hover:border-b`}
                 >
                   About
@@ -86,7 +85,7 @@ const Header = () => {
                     });
                   }}
                   className={`${
-                    color?.service ? "text-red-500 " : "text-[#1d7297]  "
+                    color?.service ? "text-[#1d7297a4] " : "text-[#1d7297]  "
                   }  hover:text-yellow-200 cursor-pointer hover:border-b`}
                 >
                   Service
@@ -102,7 +101,7 @@ const Header = () => {
                     });
                   }}
                   className={`${
-                    color?.contact ? "text-red-500 " : "text-[#1d7297] "
+                    color?.contact ? "text-[#1d7297a4]" : "text-[#1d7297] "
                   }  hover:text-yellow-200 cursor-pointer hover:border-b`}
                 >
                   Contact Us
@@ -111,7 +110,7 @@ const Header = () => {
                   className="text-yellow-100"
                   onClick={() => setSideBar(true)}
                 >
-                  <RiContactsLine />
+                  {/* <RiContactsLine /> */}
                 </div>
               </div>
             </div>
@@ -217,7 +216,7 @@ const Header = () => {
         {/* <div className=" w-full  h-fit sidebar   absolute   z-[999]  bg-white text-black  ">
  dfvdvrgfdv
   </div> */}
-        {sideBar && (
+        {/* {sideBar && (
           <div className="animate-pulse  bg-blue-500 z-50">
             <div className="absolute right-0 top-0  h-full w-96   ">
               <p
@@ -230,35 +229,35 @@ const Header = () => {
               jhjh
             </div>{" "}
           </div>
-        )}
+        )} */}
       </div>
       {menuOpen && (
-          <div className="z-50 bg-[#9cbfd2] text-yellow-100 text-lg p-4 pl-6 pt-16 ">
+          <div className="z-50 bg-[#87bfdd] text-yellow-100 text-lg p-4 pl-6 pt-16 ">
             <a
               href="/"
               onClick={() => { setColor({ home: true, about: false, service: false, contact: false }); setMenuOpen(false); }}
-              className={`${color?.home ? "text-red-500" : "text-[#1d7297]"} block py-1 pt-4 hover:text-yellow-200 cursor-pointer hover:border-b`}
+              className={`${color?.home ? "text-[#1d7297a4]" : "text-[#1d7297]"} block py-1 pt-4 hover:text-yellow-200 cursor-pointer hover:border-b`}
             >
               Home
             </a>
             <a
               href="about"
               onClick={() => { setColor({ home: false, about: true, service: false, contact: false }); setMenuOpen(false); }}
-              className={`${color?.about ? "text-red-500" : "text-[#1d7297]"} block py-1 hover:text-yellow-200 cursor-pointer hover:border-b`}
+              className={`${color?.about ? "text-[#1d7297a4]" : "text-[#1d7297]"} block py-1 hover:text-yellow-200 cursor-pointer hover:border-b`}
             >
               About
             </a>
             <a
               href="servicePage"
               onClick={() => { setColor({ home: false, about: false, service: true, contact: false }); setMenuOpen(false); }}
-              className={`${color?.service ? "text-red-500" : "text-[#1d7297]"} block py-1 hover:text-yellow-200 cursor-pointer hover:border-b`}
+              className={`${color?.service ? "text-[#1d7297a4]" : "text-[#1d7297]"} block py-1 hover:text-yellow-200 cursor-pointer hover:border-b`}
             >
               Service
             </a>
             <a
               href="contactUs"
               onClick={() => { setColor({ home: false, about: false, service: false, contact: true }); setMenuOpen(false); }}
-              className={`${color?.contact ? "text-red-500" : "text-[#1d7297]"} block py-1 hover:text-yellow-200 cursor-pointer hover:border-b`}
+              className={`${color?.contact ? "text-[#1d7297a4]" : "text-[#1d7297]"} block py-1 hover:text-yellow-200 cursor-pointer hover:border-b`}
             >
               Contact Us
             </a>
