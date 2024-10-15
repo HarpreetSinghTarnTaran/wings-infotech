@@ -6,21 +6,19 @@ import BackImg from "@/app/assets/images/home.jpg";
 import LaunchBull from "@/app/assets/images/LaunchBull.jpeg";
 import Jangbaj from "@/app/assets/images/Jangbaj.jpeg";
 import HiyNSky from "@/app/assets/images/HiyNSky.png"
-import Jangbaj2 from "@/app/assets/images/Jangbaj2.jpeg";
-import Jangbaj3 from "@/app/assets/images/Jangbaj3.jpeg";
+// import Jangbaj2 from "@/app/assets/images/Jangbaj2.jpeg";
+// import Jangbaj3 from "@/app/assets/images/Jangbaj3.jpeg";
 import { motion, AnimatePresence } from "framer-motion";
 
 import Image from "next/image";
-// import { Autoplay, Navigation } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay,Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Autoplay,Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 
-// Import Swiper styles
-// import 'swiper/swiper-bundle.min.css';
-// import 'swiper/components/navigation/navigation.min.css';
+
 
 const home = () => {
   // const [count, setCount] = useState(0);
@@ -220,10 +218,7 @@ const home = () => {
                 Jangbaj Singh
               </p>
               <span className="text-xl font-extralight text-slate-600">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea enim
-              quidem quos temporibus hic, recusandae deserunt eaque. Maiores
-              laboriosam blanditiis atque architecto eius molestias molestiae
-              cupiditate, suscipit in quaerat officia?</span>
+              This website launch in Canada and its make to using HTML SCC and that website fully mobile responsive </span>
             </div>
           </div>
           <div className="border-2 mt-10 mx-6 md:hidden"></div>
@@ -233,10 +228,7 @@ const home = () => {
                 LaunchBull
               </p>
               <span className="text-xl font-extralight text-slate-600">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea enim
-              quidem quos temporibus hic, recusandae deserunt eaque. Maiores
-              laboriosam blanditiis atque architecto eius molestias molestiae
-              cupiditate, suscipit in quaerat officia?</span>
+              This website launch in Canada and its make to using HTML SCC and that website fully mobile responsive.</span>
             </div>
           <div
              className="my-4 bg-yellow-400 hover:border-l hover:border-t hover:border-4 border-yellow-400 md:h-[350px] md:w-[670px] h-[300px] w-[310px] rounded-3xl">
@@ -274,10 +266,7 @@ const home = () => {
                 HighnSky
               </p >
               <span className="text-xl font-extralight text-slate-600">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea enim
-              quidem quos temporibus hic, recusandae deserunt eaque. Maiores
-              laboriosam blanditiis atque architecto eius molestias molestiae
-              cupiditate, suscipit in quaerat officia?</span>
+              I am worked on car rental project that is launching in Australia ( https://highnsky-react-app.vercel.app/ ) . Its make to using Next Js client side project and Admin side project making in react js and using ant design .</span>
             </div>
           </div>
           <div className="border-2 mt-10 mx-6 md:hidden"></div>

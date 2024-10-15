@@ -1,6 +1,6 @@
 import React from 'react'
 import BreadCrumb from "@/app/breadCrumb/page"
-import HomeService from '../homeService/page'
+// import HomeService from '../homeService/page'
 
 const servicePage = () => {
   const text ="service"
@@ -46,7 +46,7 @@ const servicePage = () => {
              <>
              <div className=" pb-10"> 
                <h2 className="md:text-2xl text-xl flex justify-center place-self-center  font-bold  text-[#1d7297]">{item?.name}</h2>
-               <p className="flex justify-center place-self-center text-xl font-extralight text-slate-600">{item?.discription}</p>
+               {/* <p className="flex justify-center place-self-center text-xl font-extralight text-slate-600">{item?.discription}</p> */}
                <p className="flex justify-center place-self-center pt-2">{item?.image}</p>
    
              </div> 
@@ -66,6 +66,7 @@ const servicePage = () => {
              </div>
            </div> */}
          </div>
+         {/* <HomeService/> */}
        </div>
        </div>
   )

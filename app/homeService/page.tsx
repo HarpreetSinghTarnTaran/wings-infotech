@@ -38,7 +38,7 @@ const homeService = () => {
           <>
           <div className=" pb-10"> 
             <h2 className="text-2xl   font-bold  text-[#1d7297]">{item?.name}</h2>
-            <p className="text-xl font-extralight text-slate-600">{item?.discription}</p>
+            {/* <p className="text-xl font-extralight text-slate-600">{item?.discription}</p> */}
             <p className="flex justify-center place-self-center">{item?.image}</p>
 
           </div> 
